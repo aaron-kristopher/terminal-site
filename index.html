@@ -17,10 +17,10 @@
   <div class="main-container">
 
     <div class="input-container">
-      <label class="prompt" for="command">
+      <span class="prompt">
         <span class="username">visitor</span>@<span class="hostname">terminal.aaron-kristopher.dev</span>:~$
-      </label>
-      <input id="command" name="command" class="prompt-command prompt-text" type="text" autofocus="">
+      </span>
+      <span class="prompt-text">./introduce.sh</span>
     </div>
 
     <pre class="ascii-name">
@@ -37,7 +37,24 @@
       <p class="introduction-text">-----</p>
       <p class="introduction-text">The source code is available in the project's <a href="https://github.com/aaron-kristopher/terminal-site" target="_blank" class="terminal-link">Github Repo</a></p>
       <p class="introduction-text">-----</p>
-      <p class="introduction-text">For a list of available commands, type <span class="help-text">`help`</span> </p>
+      <p class="introduction-text">For a list of available commands, type <span class="help-text">`help`</span>.</p>
+    </div>
+
+    <div id="output-container">
+      <!-- All output goes here -->
+    </div>
+
+    <div class="input-container">
+      <label class="prompt" for="command">
+        <span class="username">visitor</span>@<span class="hostname">terminal.aaron-kristopher.dev</span>:~$
+      </label>
+      <input 
+          id="command"
+          name="command"
+          class="prompt-command prompt-text"
+          type="text"
+          autofocus=""
+      >
     </div>
       
   </div>
