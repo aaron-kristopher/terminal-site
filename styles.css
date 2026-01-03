@@ -1,0 +1,82 @@
+:root {
+	--slate-950: oklch(12.9% 0.042 264.695);
+	--neutral-300: oklch(87% 0 0);
+	--amber-500: oklch(76.9% 0.188 70.08);
+	--emerald-500: oklch(69.6% 0.17 162.48);
+}
+
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Victor Mono", monospace;
+	font-weight: 600;
+	background-color: var(--slate-950);
+}
+
+.main-container {
+	color: var(--neutral-300);
+	height: 100vh;
+	max-width: 1200px;
+	margin: 1rem auto;
+	padding: 1rem 2rem;
+}
+
+/*########################
+*
+*  INTRODUCTION AND HELP
+*
+* ########################
+*/
+
+.introduction-text {
+	padding: .25rem 0;
+}
+
+.ascii-name {
+	padding: 1rem 0;
+}
+
+.help-text {
+	color: var(--emerald-500);
+}
+
+.terminal-link {
+	font-weight: 700;
+	color: var(--amber-500);
+}
+
+
+/*########################
+*
+*	   PROMPT & INPUT
+*
+* ########################
+*/
+
+.input-container {
+	display: flex;
+}
+
+.prompt {
+	font-weight: 700;
+	padding: 1rem 0;
+	flex-shrink: 0;
+}
+
+.username {
+	color: var(--amber-500);
+}
+
+.hostname {
+	color: var(--emerald-500);
+}
+
+input {
+	all: unset;
+}
+
+.prompt-command {
+	padding-left: 1rem;
+	flex: 1;
+}
