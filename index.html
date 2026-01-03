@@ -7,6 +7,7 @@
   <title>Aaron Lim</title>
 
   <link href="./styles.css" rel="stylesheet">
+  <script type="module" src="./js/app.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,26 +19,47 @@
 
     <div class="input-container">
       <span class="prompt">
-        <span class="username">visitor</span>@<span class="hostname">terminal.aaron-kristopher.dev</span>:~$
+        <span class="username">visitor</span>@<span class="hostname">terminal.dev</span>:~$
       </span>
       <span class="prompt-text">./introduce.sh</span>
     </div>
 
-    <pre class="ascii-name">
+    <div class="introduction-container">
+
+      <pre class="ascii-name">
  █████╗  █████╗ ██████╗  ██████╗ ███╗   ██╗    ██╗     ██╗███╗   ███╗
 ██╔══██╗██╔══██╗██╔══██╗██╔═══██╗████╗  ██║    ██║     ██║████╗ ████║
 ███████║███████║██████╔╝██║   ██║██╔██╗ ██║    ██║     ██║██╔████╔██║
 ██╔══██║██╔══██║██╔══██╗██║   ██║██║╚██╗██║    ██║     ██║██║╚██╔╝██║
 ██║  ██║██║  ██║██║  ██║╚██████╔╝██║ ╚████║    ███████╗██║██║ ╚═╝ ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚══════╝╚═╝╚═╝     ╚═╝
-    </pre>
+      </pre>
 
-    <div class="introduction-container">
-      <p class="introduction-text">Welcome to my terminal portfolio. (Version 1.0.0)</p>
-      <p class="introduction-text">-----</p>
-      <p class="introduction-text">The source code is available in the project's <a href="https://github.com/aaron-kristopher/terminal-site" target="_blank" class="terminal-link">Github Repo</a></p>
-      <p class="introduction-text">-----</p>
-      <p class="introduction-text">For a list of available commands, type <span class="help-text">`help`</span>.</p>
+      <pre class="ascii-art">
+ ___________________
+ | _______________ |
+ | |XXXXXXXXXXXXX| |
+ | |XXXXXXXXXXXXX| |
+ | |XXXXXXXXXXXXX| |
+ | |XXXXXXXXXXXXX| |
+ | |XXXXXXXXXXXXX| |
+ |_________________|
+     _[_______]_
+ ___[___________]___
+|         [_____] []|__
+|         [_____] []|  \__
+L___________________J     \ \___\/
+ ___________________      /\
+/###################\    (__)
+        </pre>
+
+      <div class="introduction-text__container">
+        <p class="introduction-text">Welcome to my terminal portfolio. (Version 1.0.0)</p>
+        <p class="introduction-text">-----</p>
+        <p class="introduction-text">The source code is available in the project's <a href="https://github.com/aaron-kristopher/terminal-site" target="_blank" class="terminal-link">Github Repo</a></p>
+        <p class="introduction-text">-----</p>
+        <p class="introduction-text">For a list of available commands, type <span class="help-text">`help`</span>.</p>
+      </div>
     </div>
 
     <div id="output-container">
@@ -46,7 +68,7 @@
 
     <div class="input-container">
       <label class="prompt" for="command">
-        <span class="username">visitor</span>@<span class="hostname">terminal.aaron-kristopher.dev</span>:~$
+        <span class="username">visitor</span>@<span class="hostname">terminal.dev</span>:~$
       </label>
       <input 
           id="command"
